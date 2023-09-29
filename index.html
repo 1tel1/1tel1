@@ -10,33 +10,11 @@
 		<link rel="stylesheet" href="static/css/tiny-slider.css">
 		<link rel="stylesheet" href="static/css/tailwind.css">
 		<script src="static/js/wow.min.js"></script>
-		<script src="https://cdn.bootcss.com/clipboard.js/1.7.1/clipboard.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script>
 			// ===== wow js
 			new WOW().init();
 		</script>
 		<script defer="" src="static/js/alpine.min.js"></script>
-		<script type="text/javascript">
-        function copy() {
-            var e = document.getElementById("copy");
-            e.select(); // 选择对象
-            document.execCommand("Copy"); // 执行浏览器复制命令
-            alert("复制成功！");
-        }
-    </script>
-<script>
-	var copybtn=document.getElementById('btn');
-	var clipboard=new Clipboard(btn);
-	clipboard.on('success', function(e){
-		$('#show').slideDown().delay(1500).slideUp(300);
-		console.log(e);
-	});
-	clipboard.on('error', function(e){
-		$('#show').slideDown().delay(1500).slideUp(300);
-		console.log(e);
-	});
-</script>
 	</head>
 	<body class="a0" x-data="
       {
@@ -77,67 +55,61 @@
 								class="ar as aK a4 aL[250px] av aM aN lg:aO lg:al lg:a4 lg:aj lg:a6 aP lg:aQ lg:ak lg:aR xl:aS">
 								<ul class="aT lg:a3">
 									<li class="aU af">
-										<a href="javascript:;"
-											class="aV a3 an aW aX aZ group-hover:aZ lg:a_ lg:a10 lg:a11 lg:a12">
+										<a href="javascript:void(0)" @click="submenuOpen = !submenuOpen"
+											class="af aV a3 an aW aX aY[#bababa] group-hover:aZ lg:a_ lg:a13 lg:a10 lg:a11 lg:a12 xl:a14">
 											GoodWay
 										</a>
 									</li>
 									<li class="aU submenu-item af">
-										<a href="javascript:void(0)" @click="submenuOpen = !submenuOpen"
+										<!--target配置说明是在新标签页中打开链接-->
+										<a href="javascript:;"  @click="submenuOpen = !submenuOpen"
 											class="af aV a3 an aW aX aY[#bababa] after:ar after:a15 after:at/2 after:a16[-2px] after:a17 after:a18 after:au[-50%] after:aC after:a19 after:a1a after:a1b group-hover:aZ lg:a_ lg:a13 lg:a10 lg:a11 lg:a1c lg:a1d lg:after:a1e xl:a14">
 											GOOD
 										</a>
 										<div :class="submenuOpen ? 'al' : 'aA' "
 											class="submenu af aK a2 aG[250px] a1f aa a1g a1h[top] a1i group-hover:a1j lg:a1k lg:ar lg:aD[110%] lg:al lg:aI lg:aN lg:group-hover:a1l lg:group-hover:aK">
-											
-											 <!--target配置说明是在新标签页中打开链接-->
-        										<a href="https://178.79.157.138/#/dashboard;" target="_blank"
-											class="al a1m ax[10px] ak a1n a1o aY[#bababa] hover:aZ">
-												KASM
-											</a>
-											
-											
-											<div>
-												<span id="copybtn" data-clipboard-text="admin@kasm.local">✡️ 用户名 ✡️</span>
-												<span id="copybtn" data-clipboard-text="Guwei888@@@">✡️ 密码 ✡️</span>
-											</div>
-											<div id="show" style="display: none;">已复制</div>
-
-											<a href="javascript:;"
+											<a href="https://178.79.157.138/#/login;" target="_blank"
 												class="al a1m ax[10px] ak a1n a1o aY[#bababa] hover:aZ">
-
-												<textarea id="copy"; style="width: 0";>admin@kasm.local</textarea>
-    												<input type="button" onclick="copy();" value="✡️ 用户名 ✡️"></input>
+												KASM 应用平台
 											</a>
 											<a href="javascript:;"
 												class="al a1m ax[10px] ak a1n a1o aY[#bababa] hover:aZ">
-												<textarea id="copy"; style="width: 0";>Guwei888@@@</textarea>
-    												<input type="button" onclick="copy();" value="✡️ 密码 ✡️"></input>
+												<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text" id="copy1" value="admin@kasm.local">
+											    <button data-copytarget="#copy1">✡️ 用户名 ✡️"</button>
+											</a>
+											<a href="javascript:;"
+												class="al a1m ax[10px] ak a1n a1o aY[#bababa] hover:aZ">
+												<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text" id="copy2" value="Guwei888@@@">
+												<button data-copytarget="#copy2">✡️ 密码 ✡️</button>
 											</a>
 										</div>
 									</li>
 									<li class="aU submenu-item af">
-										<a href="javascript:void(0)" @click="submenuOpen = !submenuOpen"
+										<!--target配置说明是在新标签页中打开链接-->
+										<a href="javascript:;"  @click="submenuOpen = !submenuOpen"
 											class="af aV a3 an aW aX aY[#bababa] after:ar after:a15 after:at/2 after:a16[-2px] after:a17 after:a18 after:au[-50%] after:aC after:a19 after:a1a after:a1b group-hover:aZ lg:a_ lg:a13 lg:a10 lg:a11 lg:a1c lg:a1d lg:after:a1e xl:a14">
 											WAY
 										</a>
 										<div :class="submenuOpen ? 'al' : 'aA' "
 											class="submenu af aK a2 aG[250px] a1f aa a1g a1h[top] a1i group-hover:a1j lg:a1k lg:ar lg:aD[110%] lg:al lg:aI lg:aN lg:group-hover:a1l lg:group-hover:aK">
-											<a href="https://wuying.aliyun.com/home?spm=5176.28349446.J_2009170600.1.59097e459mpoPP;" 
+											<a href="https://wuying.aliyun.com/home?spm=5176.28349446.J_2009170600.1.59097e459mpoPP;" target="_blank"
 												class="al a1m ax[10px] ak a1n a1o aY[#bababa] hover:aZ">
-												JOIN IN
+												无影云 远程桌面
 											</a>
 											<a href="javascript:;"
 												class="al a1m ax[10px] ak a1n a1o aY[#bababa] hover:aZ">
-												✡️ 组织ID ：Jm671183
+												<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text" id="copy3" value="Jm671183">
+											    <button data-copytarget="#copy3">✡️ 组织ID ✡️"</button>
 											</a>
 											<a href="javascript:;"
 												class="al a1m ax[10px] ak a1n a1o aY[#bababa] hover:aZ">
-												✡️ 用户名 :  yiyanyun21
+												<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text" id="copy4" value="yiyanyun21">
+												<button data-copytarget="#copy4">✡️ 用户名 ✡️</button>
 											</a>
 											<a href="javascript:;"
 												class="al a1m ax[10px] ak a1n a1o aY[#bababa] hover:aZ">
-												密码： Guwei888@@@
+												<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text" id="copy2" value="Guwei888@@@">
+												<button data-copytarget="#copy2">✡️ 密码 ✡️</button>
 											</a>
 										</div>
 									</li>
@@ -148,17 +120,17 @@
 										</a>
 										<div :class="submenuOpen ? 'al' : 'aA' "
 											class="submenu af aK a2 aG[250px] a1f aa a1g a1h[top] a1i group-hover:a1j lg:a1k lg:ar lg:aD[110%] lg:al lg:aI lg:aN lg:group-hover:a1l lg:group-hover:aK">
-											<a href="http://34.107.118.177;"
+											<a href="javascript:;"
 												class="al a1m ax[10px] ak a1n a1o aY[#bababa] hover:aZ">
-												WAZO
+												Other1
 											</a>
-											<a href="http://35.197.241.87/;"
+											<a href="javascript:;"
 												class="al a1m ax[10px] ak a1n a1o aY[#bababa] hover:aZ">
-												class4v6
+												Other2
 											</a>
-											<a href="http://34.89.7.12/;"
+											<a href="javascript:;"
 												class="al a1m ax[10px] ak a1n a1o aY[#bababa] hover:aZ">
-												FreePBX
+												Other3
 											</a>
 											<a href="javascript:;"
 												class="al a1m ax[10px] ak a1n a1o aY[#bababa] hover:aZ">
@@ -216,7 +188,7 @@
 								</div>
 							</div>
 							<!-- GitHub 文字-->
-							<a href="https://github.com/1tel1/1tel1/blob/main/index.html;"
+							<a href="javascript:;"
 								class="a3 a5 a1f a1y a1z aP aS aW aX aZ a7 a1i a1A hover:a1B hover:a1C lg:ak xl:aS">
 								<span class="a1D">
 									<svg width="23" height="24" viewbox="0 0 23 24" fill="none"
@@ -369,7 +341,7 @@
 					<div class="a1R a3">
 						<div class="a4 ak">
 							<h2 class="a1Y a3n a1O aZ">
-								MyPBX
+								WEB
 							</h2>
 						</div>
 					</div>
@@ -379,37 +351,35 @@
 					<div class="artists-slider a1R a3 a1S">
 						<!-- 首页 滑动标签 条目1-->	
 						<div class="a4 ak md:a1T/2 xl:a1T/3 2xl:a1T/4">
-						 	<a href="http://47.106.172.188:8081/#/";>
-							<div class="gradient-bg a1Y a1V a2T[2px]">
+						 	<div class="gradient-bg a1Y a1V a2T[2px]">
 								<div class="a3 a5 a1V aM a3o">
 									<div class="a2c aF[70px] a4 aL[70px] a2p av">
-										<img src="static/picture/image-01.png" alt="artists" class="a30 a4 a31 a32">
+										<img src="static/picture/ushop.png" alt="artists" class="a30 a4 a31 a32">
 									</div>
 									<div class="a4">
 										<h3 class="a2E a1Q aX aZ">
-											XSwitch
+											<a href="http://124.71.218.178/"; target="_blank">U商店支付</a>
 										</h3>
 										<span class="aW aX a3p">
-											阿里云
+											华为云
 										</span>
 									</div>
 								</div>
 							</div>
-							</a>
 						</div>
 						<!-- 首页 滑动标签 条目2-->
 						<div class="a4 ak md:a1T/2 xl:a1T/3 2xl:a1T/4">
-							<div class="gradient-bg a1Y a1V a2T[2px]">
+						 	<div class="gradient-bg a1Y a1V a2T[2px]">
 								<div class="a3 a5 a1V aM a3o">
 									<div class="a2c aF[70px] a4 aL[70px] a2p av">
-										<img src="static/picture/image-02.png" alt="artists" class="a30 a4 a31 a32">
+										<img src="static/picture/hei.png" alt="artists" class="a30 a4 a31 a32">
 									</div>
 									<div class="a4">
 										<h3 class="a2E a1Q aX aZ">
-											@Devid_Miller
+											<a href="http://43.136.175.218/index.php?title=%E9%A6%96%E9%A1%B5"; target="_blank">MediaWIKI</a>
 										</h3>
 										<span class="aW aX a3p">
-											14.55 ETH
+											腾讯云
 										</span>
 									</div>
 								</div>
@@ -417,17 +387,17 @@
 						</div>
 						<!-- 首页 滑动标签 条目3-->
 						<div class="a4 ak md:a1T/2 xl:a1T/3 2xl:a1T/4">
-							<div class="gradient-bg a1Y a1V a2T[2px]">
+						 	<div class="gradient-bg a1Y a1V a2T[2px]">
 								<div class="a3 a5 a1V aM a3o">
 									<div class="a2c aF[70px] a4 aL[70px] a2p av">
-										<img src="static/picture/image-03.png" alt="artists" class="a30 a4 a31 a32">
+										<img src="static/picture/bt1.png" alt="artists" class="a30 a4 a31 a32">
 									</div>
 									<div class="a4">
 										<h3 class="a2E a1Q aX aZ">
-											@Elon_Mask
+											<a href="http://106.55.224.85:8888/1telcn"; target="_blank">宝塔面板</a>
 										</h3>
 										<span class="aW aX a3p">
-											12.25 ETH
+											备案域名
 										</span>
 									</div>
 								</div>
@@ -435,17 +405,17 @@
 						</div>
 						<!-- 首页 滑动标签 条目4-->
 						<div class="a4 ak md:a1T/2 xl:a1T/3 2xl:a1T/4">
-							<div class="gradient-bg a1Y a1V a2T[2px]">
+						 	<div class="gradient-bg a1Y a1V a2T[2px]">
 								<div class="a3 a5 a1V aM a3o">
 									<div class="a2c aF[70px] a4 aL[70px] a2p av">
-										<img src="static/picture/image-04.png" alt="artists" class="a30 a4 a31 a32">
+										<img src="static/picture/kali.png" alt="artists" class="a30 a4 a31 a32">
 									</div>
 									<div class="a4">
 										<h3 class="a2E a1Q aX aZ">
-											@Hiliya_Farah
+											<a href="http://43.138.132.2/"; target="_blank">Kali</a>
 										</h3>
 										<span class="aW aX a3p">
-											9.89 ETH
+											油香蜜
 										</span>
 									</div>
 								</div>
@@ -453,17 +423,17 @@
 						</div>
 						<!-- 首页 滑动标签 条目5-->
 						<div class="a4 ak md:a1T/2 xl:a1T/3 2xl:a1T/4">
-							<div class="gradient-bg a1Y a1V a2T[2px]">
+						 	<div class="gradient-bg a1Y a1V a2T[2px]">
 								<div class="a3 a5 a1V aM a3o">
 									<div class="a2c aF[70px] a4 aL[70px] a2p av">
-										<img src="static/picture/image-05.png" alt="artists" class="a30 a4 a31 a32">
+										<img src="static/picture/github.png" alt="artists" class="a30 a4 a31 a32">
 									</div>
 									<div class="a4">
 										<h3 class="a2E a1Q aX aZ">
-											@Wilium_Dev
+											<a href="https://github.com/1tel1/1tel1/blob/main/index.html"; target="_blank">1tel1</a>
 										</h3>
 										<span class="aW aX a3p">
-											2.09 ETH
+											github
 										</span>
 									</div>
 								</div>
@@ -481,81 +451,17 @@
 					<div class="ah sm:a3">
 						<!-- 首页 大图 标题-->	
 						<h2 class="a1M a3n a1O a3r aZ">
-							CLOUD
+							云服务
 						</h2>
 						<!-- 首页 大图 按钮-->
 						<a href="javascript:void(0)" class="a1Y a10 a5 a1Z a1f a1C ax[10px] aS aW aX aZ a1w hover:a36">
-							云
+							CLOUD
 						</a>
 					</div>
 				</div>
 				<!-- 首页 大图 条目-->	
 				<div class="a1R a3 a1S">
 					<!-- 首页 大图 条目1-->
-					<div class="a4 ak md:a1T/2 lg:a1T/3 2xl:a1T/4">
-						<div class="a1U a1V a1W a1G aM a2T[18px]">
-							<div class="af a1Y a2p av">
-								<img src="static/picture/alis.png" alt="auctions" class="a4">
-								<button class="ar as a2U a10 a5 a1f aH a2V a2W">
-									<svg width="14" height="14" viewbox="0 0 14 14" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M6.99999 11.8709L6.15416 11.1009C3.14999 8.37675 1.16666 6.57425 1.16666 4.37508C1.16666 2.57258 2.57832 1.16675 4.37499 1.16675C5.38999 1.16675 6.36416 1.63925 6.99999 2.38008C7.63582 1.63925 8.60999 1.16675 9.62499 1.16675C11.4217 1.16675 12.8333 2.57258 12.8333 4.37508C12.8333 6.57425 10.85 8.37675 7.84582 11.1009L6.99999 11.8709Z"
-											fill="#F85486"></path>
-									</svg>
-									<span class="a2X a2Y aX a23">
-										ing
-									</span>
-								</button>
-							</div>
-							<div>
-								<h3>
-									<a href="https://aliyun.com" class="a2D a2a a1Q aX aZ hover:a1u">
-										阿里云
-									</a>
-									<!--<a href="http://43.136.175.218/index.php?title=%E9%A6%96%E9%A1%B5" class="a2D a2a a1Q aX aZ hover:a1u">
-										MediaWIKI
-									</a>-->
-								</h3>
-								<div class="a1Y a3 a5 ah">
-									<div class="a4">
-										<div class="a3 a5">
-											<div class="a2Z a2_ a4 aL[32px] a1f">
-												<img src="static/picture/al1.png" alt="creator"
-													class="a30 a4 a31 a32">
-											</div>
-											<div class="a4">
-												<h4 class="a2Y aX aZ">
-													云计算
-													<span class="al a2Y a1o a1t">
-													云桌面
-													</span>
-												</h4>
-											</div>
-										</div>
-									</div>
-									<div class="a4">
-										<h5 class="a33 a2Y aX aZ">
-											企业邮箱
-											<span class="al a2Y a1o a1t">
-											域名
-											</span>
-										</h5>
-										<!--<h5 class="a33 a2Y aX aZ">
-											dzcruwz1927@zsuts.com 
-											<span class="al a2Y a1o a1t">
-											aa@@hhzz3844
-											</span>
-										</h5>-->
-									</div>
-								</div>
-								<div class="a3 a5 a1Z a1f aH a3s a2T[10px] aW aX aZ">
-									43.136.175.218
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- 首页 大图 条目2-->
 					<div class="a4 ak md:a1T/2 lg:a1T/3 2xl:a1T/4">
 						<div class="a1U a1V a1W a1G aM a2T[18px]">
 							<div class="af a1Y a2p av">
@@ -568,31 +474,28 @@
 											fill="#F85486"></path>
 									</svg>
 									<span class="a2X a2Y aX a23">
-										HOT
+										腾讯
 									</span>
 								</button>
 							</div>
 							<div>
 								<h3>
-									<!--<a href="http://106.55.224.85:8888/1telcn" class="a2D a2a a1Q aX aZ hover:a1u">
-										宝塔面板
-									</a>->
-									<a href="https://cloud.tencent.com/" class="a2D a2a a1Q aX aZ hover:a1u">
-										腾讯云
+									<a href="https://cloud.tencent.com/" target="_blank" class="a2D a2a a1Q aX aZ hover:a1u">
+										腾讯云服务
 									</a>
 								</h3>
 								<div class="a1Y a3 a5 ah">
 									<div class="a4">
 										<div class="a3 a5">
 											<div class="a2Z a2_ a4 aL[32px] a1f">
-												<img src="static/picture/creator-01.png" alt="creator"
+												<img src="static/picture/tx1.png" alt="creator"
 													class="a30 a4 a31 a32">
 											</div>
 											<div class="a4">
 												<h4 class="a2Y aX aZ">
 													轻量服务器
 													<span class="al a2Y a1o a1t">
-													备案域名
+													语音服务
 													</span>
 												</h4>
 											</div>
@@ -600,30 +503,24 @@
 									</div>
 									<div class="a4">
 										<h5 class="a33 a2Y aX aZ">
-											宝塔面板
+											备案域名
 											<span class="al a2Y a1o a1t">
-											语音中心
+											存储桶
 											</span>
 										</h5>
-									<!--<h5 class="a33 a2Y aX aZ">
-											yiyanyun21@163.com
-											<span class="al a2Y a1o a1t">
-											Gu.wei.88.@@
-											</span>
-										</h5>-->
 									</div>
 								</div>
 								<div class="a3 a5 a1Z a1f aH a3s a2T[10px] aW aX aZ">
-									106.55.224.85
+									1.1.1.1
 								</div>
 							</div>
 						</div>
 					</div>
-					<!-- 首页 大图 条目3-->
+					<!-- 首页 大图 条目2-->
 					<div class="a4 ak md:a1T/2 lg:a1T/3 2xl:a1T/4">
 						<div class="a1U a1V a1W a1G aM a2T[18px]">
 							<div class="af a1Y a2p av">
-								<img src="static/picture/otehers.png" alt="auctions" class="a4">
+								<img src="static/picture/alis.png" alt="auctions" class="a4">
 								<button class="ar as a2U a10 a5 a1f aH a2V a2W">
 									<svg width="14" height="14" viewbox="0 0 14 14" fill="none"
 										xmlns="http://www.w3.org/2000/svg">
@@ -632,41 +529,28 @@
 											fill="#F85486"></path>
 									</svg>
 									<span class="a2X a2Y aX a23">
-										500
+										阿里云
 									</span>
 								</button>
 							</div>
 							<div>
 								<h3>
-									<a href="https://www.huaweicloud.com/" class="a2D a2a a1Q aX aZ hover:a1u">
-										国内云
+									<a href="https://aliyun.com/" target="_blank" class="a2D a2a a1Q aX aZ hover:a1u">
+										阿里云服务
 									</a>
-									<!--<a href="https://178.79.157.138/#/login" class="a2D a2a a1Q aX aZ hover:a1u">
-										KASM 应用平台
-									</a>
-									<!--<a href="http://124.71.218.178/" class="a2D a2a a1Q aX aZ hover:a1u">
-										U商店支付
-									</a>-->
 								</h3>
 								<div class="a1Y a3 a5 ah">
 									<div class="a4">
 										<div class="a3 a5">
 											<div class="a2Z a2_ a4 aL[32px] a1f">
-												<img src="static/picture/creator-04.png" alt="creator"
+												<img src="static/picture/ali1.png" alt="creator"
 													class="a30 a4 a31 a32">
 											</div>
 											<div class="a4">
 												<h4 class="a2Y aX aZ">
-													<a href="https://www.jdcloud.com/" class="a2D a2a a1Q aX aZ hover:a1u">
-														京东云
-													</a>
-													<!-- Linode
-													华为云 -->
+													云计算
 													<span class="al a2Y a1o a1t">
-													<!-- Ab123456-->
-													<a href="https://www.ctyun.cn/" class="a2D a2a a1Q aX aZ hover:a1u">
-														天冀云
-													</a>
+													免费试用
 													</span>
 												</h4>
 											</div>
@@ -674,17 +558,78 @@
 									</div>
 									<div class="a4">
 										<h5 class="a33 a2Y aX aZ">
-											<a href="https://www.volcengine.com/" class="a2D a2a a1Q aX aZ hover:a1u">
-														火山引擎
-											</a>
+											企业邮箱
 											<span class="al a2Y a1o a1t">
-											更多+++
+											国际云
 											</span>
 										</h5>
 									</div>
 								</div>
 								<div class="a3 a5 a1Z a1f aH a3s a2T[10px] aW aX aZ">
-									1.1.1.1
+									8.8.8.8
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 首页 大图 条目3-->
+					<div class="a4 ak md:a1T/2 lg:a1T/3 2xl:a1T/4">
+						<div class="a1U a1V a1W a1G aM a2T[18px]">
+							<div class="af a1Y a2p av">
+								<img src="static/picture/others.png" alt="auctions" class="a4">
+								<button class="ar as a2U a10 a5 a1f aH a2V a2W">
+									<svg width="14" height="14" viewbox="0 0 14 14" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M6.99999 11.8709L6.15416 11.1009C3.14999 8.37675 1.16666 6.57425 1.16666 4.37508C1.16666 2.57258 2.57832 1.16675 4.37499 1.16675C5.38999 1.16675 6.36416 1.63925 6.99999 2.38008C7.63582 1.63925 8.60999 1.16675 9.62499 1.16675C11.4217 1.16675 12.8333 2.57258 12.8333 4.37508C12.8333 6.57425 10.85 8.37675 7.84582 11.1009L6.99999 11.8709Z"
+											fill="#F85486"></path>
+									</svg>
+									<span class="a2X a2Y aX a23">
+										华为云
+									</span>
+								</button>
+							</div>
+							<div>
+								<h3>
+									<a href="https://www.huaweicloud.com/" target="_blank" class="a2D a2a a1Q aX aZ hover:a1u">
+										其他云服务
+									</a>
+								</h3>
+								<div class="a1Y a3 a5 ah">
+									<div class="a4">
+										<div class="a3 a5">
+											<div class="a2Z a2_ a4 aL[32px] a1f">
+												<img src="static/picture/hw1.png" alt="creator"
+													class="a30 a4 a31 a32">
+											</div>
+											<div class="a4">
+												<h4 class="a2Y aX aZ">
+													<a href="https://www.ctyun.cn/" target="_blank">
+														天冀云服务
+													</a>
+													<span class="al a2Y a1o a1t">
+														<a href="https://www.volcengine.com/" target="_blank">
+															火山引擎
+														</a>
+													</span>
+												</h4>
+											</div>
+										</div>
+									</div>
+									<div class="a4">
+										<h5 class="a33 a2Y aX aZ">
+											<a href="https://cloud.baidu.com/" target="_blank">
+											    百度智能云
+											</a>
+											<span class="al a2Y a1o a1t">
+												<a href="https://www.qiniu.com/" target="_blank">
+											    七牛云
+											</a>
+											</span>
+										</h5>
+									</div>
+								</div>
+								<div class="a3 a5 a1Z a1f aH a3s a2T[10px] aW aX aZ">
+									10.0.0.1
 								</div>
 							</div>
 						</div>
@@ -702,31 +647,32 @@
 											fill="#F85486"></path>
 									</svg>
 									<span class="a2X a2Y aX a23">
-										200
+										linode
 									</span>
 								</button>
 							</div>
 							<div>
 								<h3>
-									<a href="http://43.138.132.2:8006" class="a2D a2a a1Q aX aZ hover:a1u">
-										国外云
+									<a href="https://www.linode.com/" class="a2D a2a a1Q aX aZ hover:a1u">
+										国际云服务
 									</a>
-									<!--<a href="http://43.138.132.2:8006" class="a2D a2a a1Q aX aZ hover:a1u">
-										PVE虚拟环境
-									</a>-->
 								</h3>
 								<div class="a1Y a3 a5 ah">
 									<div class="a4">
 										<div class="a3 a5">
 											<div class="a2Z a2_ a4 aL[32px] a1f">
-												<img src="static/picture/creator-03.png" alt="creator"
+												<img src="static/picture/aws.png" alt="creator"
 													class="a30 a4 a31 a32">
 											</div>
 											<div class="a4">
-												<h4 class="a2Y aX aZ">
-													腾讯云
+												<h4 class="a2Y aX aZ">aws
+													<a href="https://aws.amazon.com/" target="_blank">
+													    亚马逊
+													</a>
 													<span class="al a2Y a1o a1t">
-													Guwei888
+														<a href="https://azure.microsoft.com/" target="_blank">
+													    微软云计算
+													</a>
 													</span>
 												</h4>
 											</div>
@@ -734,15 +680,19 @@
 									</div>
 									<div class="a4">
 										<h5 class="a33 a2Y aX aZ">
-											karkutamsyahq@hotmail.com
+											<a href="https://cloud.google.com/" target="_blank">
+											谷歌云
+											</a>
 											<span class="al a2Y a1o a1t">
-											wz8166cn@@
+											<a href="https://www.digitalocean.com/" target="_blank">
+											蓝色水滴
+											</a>
 											</span>
 										</h5>
 									</div>
 								</div>
 								<div class="a3 a5 a1Z a1f aH a3s a2T[10px] aW aX aZ">
-									43.138.132.2
+									07 : 15 : 03 : 12
 								</div>
 							</div>
 						</div>
@@ -769,9 +719,7 @@
 					<!-- 首页 大图2 条目1-->	
 					<div class="a4 ak md:a1T/2 lg:a1T/3 2xl:a1T/4">
 						<div class="a1U a1V a1W a1G aM a2T[18px]">
-							
 							<div class="af a1Y a2p av">
-								
 								<img src="static/picture/image-011.svg" alt="auctions" class="a4">
 								<button class="ar as a2U a10 a5 a1f aH a2V a2W">
 									<svg width="14" height="14" viewbox="0 0 14 14" fill="none"
@@ -784,12 +732,11 @@
 										4.6K
 									</span>
 								</button>
-								
 							</div>
 							<div>
 								<h3>
-									<a href="http://124.71.218.178/"; class="a2D a2a a1Q aX aZ hover:a1u">
-										3d abstract illustration
+									<a href="javascript:void(0)" class="a2D a2a a1Q aX aZ hover:a1u">
+										星号
 									</a>
 								</h3>
 								<div class="a2b a3 a5 ah">
@@ -1705,7 +1652,35 @@
 				</div>
 			</div>
 		</footer>
-
+											<script>
+											    (function name(params) {
+											        'use strict';
+											
+											        //添加点击事件
+											        document.body.addEventListener('click', copy, true);
+											
+											        //copy事件
+											        function copy(e) {
+											            //找到要复制的区域
+											            var
+											                t = e.target,
+											                c = t.dataset.copytarget,
+											                inp = (c ? document.querySelector(c) : null);
+											            //要复制的区域是否可以选中
+											            if (inp && inp.select) {
+											                //选中
+											                inp.select();
+											
+											                try {
+											                    //执行复制
+											                    document.execCommand('copy');
+											                } catch (error) {
+											                    alert('请使用Ctrl+c进行复制');
+											                }
+											            }
+											        }
+											    })();
+											</script>
 		<script src="static/js/tiny-slider.js"></script>
 		<script>
 			//======== tiny slider for clients
