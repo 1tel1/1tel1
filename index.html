@@ -15,6 +15,15 @@
 			new WOW().init();
 		</script>
 		<script defer="" src="static/js/alpine.min.js"></script>
+		<script type="text/javascript">
+        function copy() {
+            var e = document.getElementById("copy");
+            e.select(); // 选择对象
+            document.execCommand("Copy"); // 执行浏览器复制命令
+            alert("复制成功！");
+        }
+    </script>
+
 	</head>
 	<body class="a0" x-data="
       {
@@ -67,13 +76,17 @@
 										</a>
 										<div :class="submenuOpen ? 'al' : 'aA' "
 											class="submenu af aK a2 aG[250px] a1f aa a1g a1h[top] a1i group-hover:a1j lg:a1k lg:ar lg:aD[110%] lg:al lg:aI lg:aN lg:group-hover:a1l lg:group-hover:aK">
-											<a href="https://178.79.157.138/#/dashboard;"
+											
+											 <!--target配置说明是在新标签页中打开链接-->
+        										<a href="https://178.79.157.138/#/dashboard;" target="_blank"
 											class="al a1m ax[10px] ak a1n a1o aY[#bababa] hover:aZ">
 												JOIN IN
 											</a>
 											<a href="javascript:;"
 												class="al a1m ax[10px] ak a1n a1o aY[#bababa] hover:aZ">
-											✡️ 用户名 :  admin@kasm.local
+											
+												<textarea id="copy">✡️ 用户名 :  admin@kasm.local</textarea>
+    												<input type="button" onclick="copy();" value="✡️ 用户名"></input>
 											</a>
 											<a href="javascript:;"
 												class="al a1m ax[10px] ak a1n a1o aY[#bababa] hover:aZ">
