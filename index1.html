@@ -22,7 +22,7 @@
       }
     " x-init="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false"
 		@scroll.window="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false">
-<!-- 顶 -->
+		<!-- 顶 -->
 		<header x-data="
         {
           navbarOpen: false,
@@ -34,7 +34,7 @@
 					<div class="ai aj ak">
 						<a href="javascript:;" class="header-logo al a4"
 							:class="scrolledFromTop ? 'am lg:an' : 'ao lg:ap' ">
-							<img src="static/picture/logo.svg" alt="logo" class="aq aj">
+							<img src="static/picture/logo.gif" alt="logo" class="aq aj">
 						</a>
 					</div>
 					<div class="a3 a4 a5 ah ak">
@@ -62,7 +62,7 @@
 									</li>
 									<li class="aU submenu-item af">
 										<!--target配置说明是在新标签页中打开链接-->
-										<a href="javascript:;"  @click="submenuOpen = !submenuOpen"
+										<a href="javascript:;" @click="submenuOpen = !submenuOpen"
 											class="af aV a3 an aW aX aY[#bababa] after:ar after:a15 after:at/2 after:a16[-2px] after:a17 after:a18 after:au[-50%] after:aC after:a19 after:a1a after:a1b group-hover:aZ lg:a_ lg:a13 lg:a10 lg:a11 lg:a1c lg:a1d lg:after:a1e xl:a14">
 											GOOD
 										</a>
@@ -74,41 +74,46 @@
 											</a>
 											<a href="javascript:;"
 												class="al a1m ax[10px] ak a1n a1o aY[#bababa] hover:aZ">
-												<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text" id="copy1" value="admin@kasm.local">
-											    <button data-copytarget="#copy1">✡️ 用户名 ✡️"</button>
+												<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text"
+													id="copy1" value="admin@kasm.local">
+												<button data-copytarget="#copy1">✡️ 用户名 ✡️"</button>
 											</a>
 											<a href="javascript:;"
 												class="al a1m ax[10px] ak a1n a1o aY[#bababa] hover:aZ">
-												<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text" id="copy2" value="Guwei888@@@">
+												<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text"
+													id="copy2" value="Guwei888@@@">
 												<button data-copytarget="#copy2">✡️ 密码 ✡️</button>
 											</a>
 										</div>
 									</li>
 									<li class="aU submenu-item af">
 										<!--target配置说明是在新标签页中打开链接-->
-										<a href="javascript:;"  @click="submenuOpen = !submenuOpen"
+										<a href="javascript:;" @click="submenuOpen = !submenuOpen"
 											class="af aV a3 an aW aX aY[#bababa] after:ar after:a15 after:at/2 after:a16[-2px] after:a17 after:a18 after:au[-50%] after:aC after:a19 after:a1a after:a1b group-hover:aZ lg:a_ lg:a13 lg:a10 lg:a11 lg:a1c lg:a1d lg:after:a1e xl:a14">
 											WAY
 										</a>
 										<div :class="submenuOpen ? 'al' : 'aA' "
 											class="submenu af aK a2 aG[250px] a1f aa a1g a1h[top] a1i group-hover:a1j lg:a1k lg:ar lg:aD[110%] lg:al lg:aI lg:aN lg:group-hover:a1l lg:group-hover:aK">
-											<a href="https://wuying.aliyun.com/home?spm=5176.28349446.J_2009170600.1.59097e459mpoPP;" target="_blank"
-												class="al a1m ax[10px] ak a1n a1o aY[#bababa] hover:aZ">
+											<a href="https://wuying.aliyun.com/home?spm=5176.28349446.J_2009170600.1.59097e459mpoPP;"
+												target="_blank" class="al a1m ax[10px] ak a1n a1o aY[#bababa] hover:aZ">
 												无影云 远程桌面
 											</a>
 											<a href="javascript:;"
 												class="al a1m ax[10px] ak a1n a1o aY[#bababa] hover:aZ">
-												<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text" id="copy3" value="Jm671183">
-											    <button data-copytarget="#copy3">✡️ 组织ID ✡️"</button>
+												<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text"
+													id="copy3" value="Jm671183">
+												<button data-copytarget="#copy3">✡️ 组织ID ✡️"</button>
 											</a>
 											<a href="javascript:;"
 												class="al a1m ax[10px] ak a1n a1o aY[#bababa] hover:aZ">
-												<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text" id="copy4" value="yiyanyun21">
+												<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text"
+													id="copy4" value="yiyanyun21">
 												<button data-copytarget="#copy4">✡️ 用户名 ✡️</button>
 											</a>
 											<a href="javascript:;"
 												class="al a1m ax[10px] ak a1n a1o aY[#bababa] hover:aZ">
-												<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text" id="copy2" value="Guwei888@@@">
+												<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text"
+													id="copy2" value="Guwei888@@@">
 												<button data-copytarget="#copy2">✡️ 密码 ✡️</button>
 											</a>
 										</div>
@@ -206,7 +211,7 @@
 			</div>
 		</header>
 
-<!-- 首页 -->
+		<!-- 首页 -->
 		<section id="home" class="af a2o a2p a38 a39 a3a a1E[150px] a1F"
 			style="background-image: url('static/image/common-bg.jpg')">
 			<div class="ar a2 a1 a3b a30 a4" style="
@@ -216,7 +221,7 @@
             #141420 100%
           );
         "></div>
-<!-- 首页 大标题-->
+			<!-- 首页 大标题-->
 			<div class="ae">
 				<div class="a1R a3 a1S a5">
 					<div class="a4 ak lg:a1T/2">
@@ -252,7 +257,7 @@
 					</div>
 				</div>
 			</div>
-		<!-- 首页 不知道是啥-->	
+			<!-- 首页 不知道是啥-->
 			<div>
 				<span class="ar a3e a3f a3b">
 					<svg width="111" height="115" viewbox="0 0 111 115" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -333,10 +338,10 @@
 			</div>
 		</section>
 
-<!-- 首页 滑动标签-->	
+		<!-- 首页 滑动标签-->
 		<section class="a35">
 			<div class="ae">
-				<!-- 首页 滑动标签 标题-->	
+				<!-- 首页 滑动标签 标题-->
 				<div class="a2w a3l a1z a3m">
 					<div class="a1R a3">
 						<div class="a4 ak">
@@ -346,19 +351,19 @@
 						</div>
 					</div>
 				</div>
-				<!-- 首页 滑动标签 条目-->	
+				<!-- 首页 滑动标签 条目-->
 				<div class="af">
 					<div class="artists-slider a1R a3 a1S">
-						<!-- 首页 滑动标签 条目1-->	
+						<!-- 首页 滑动标签 条目1-->
 						<div class="a4 ak md:a1T/2 xl:a1T/3 2xl:a1T/4">
-						 	<div class="gradient-bg a1Y a1V a2T[2px]">
+							<div class="gradient-bg a1Y a1V a2T[2px]">
 								<div class="a3 a5 a1V aM a3o">
 									<div class="a2c aF[70px] a4 aL[70px] a2p av">
 										<img src="static/picture/ushop.png" alt="artists" class="a30 a4 a31 a32">
 									</div>
 									<div class="a4">
 										<h3 class="a2E a1Q aX aZ">
-											<a href="http://124.71.218.178/"; target="_blank">U商店支付</a>
+											<a href="http://124.71.218.178/" ; target="_blank">U商店支付</a>
 										</h3>
 										<span class="aW aX a3p">
 											华为云
@@ -369,14 +374,15 @@
 						</div>
 						<!-- 首页 滑动标签 条目2-->
 						<div class="a4 ak md:a1T/2 xl:a1T/3 2xl:a1T/4">
-						 	<div class="gradient-bg a1Y a1V a2T[2px]">
+							<div class="gradient-bg a1Y a1V a2T[2px]">
 								<div class="a3 a5 a1V aM a3o">
 									<div class="a2c aF[70px] a4 aL[70px] a2p av">
 										<img src="static/picture/hei.png" alt="artists" class="a30 a4 a31 a32">
 									</div>
 									<div class="a4">
 										<h3 class="a2E a1Q aX aZ">
-											<a href="http://43.136.175.218/index.php?title=%E9%A6%96%E9%A1%B5"; target="_blank">MediaWIKI</a>
+											<a href="http://43.136.175.218/index.php?title=%E9%A6%96%E9%A1%B5" ;
+												target="_blank">MediaWIKI</a>
 										</h3>
 										<span class="aW aX a3p">
 											腾讯云
@@ -387,14 +393,14 @@
 						</div>
 						<!-- 首页 滑动标签 条目3-->
 						<div class="a4 ak md:a1T/2 xl:a1T/3 2xl:a1T/4">
-						 	<div class="gradient-bg a1Y a1V a2T[2px]">
+							<div class="gradient-bg a1Y a1V a2T[2px]">
 								<div class="a3 a5 a1V aM a3o">
 									<div class="a2c aF[70px] a4 aL[70px] a2p av">
 										<img src="static/picture/bt1.png" alt="artists" class="a30 a4 a31 a32">
 									</div>
 									<div class="a4">
 										<h3 class="a2E a1Q aX aZ">
-											<a href="http://106.55.224.85:8888/1telcn"; target="_blank">宝塔面板</a>
+											<a href="http://106.55.224.85:8888/1telcn" ; target="_blank">宝塔面板</a>
 										</h3>
 										<span class="aW aX a3p">
 											备案域名
@@ -405,14 +411,14 @@
 						</div>
 						<!-- 首页 滑动标签 条目4-->
 						<div class="a4 ak md:a1T/2 xl:a1T/3 2xl:a1T/4">
-						 	<div class="gradient-bg a1Y a1V a2T[2px]">
+							<div class="gradient-bg a1Y a1V a2T[2px]">
 								<div class="a3 a5 a1V aM a3o">
 									<div class="a2c aF[70px] a4 aL[70px] a2p av">
 										<img src="static/picture/kali.png" alt="artists" class="a30 a4 a31 a32">
 									</div>
 									<div class="a4">
 										<h3 class="a2E a1Q aX aZ">
-											<a href="http://43.138.132.2/"; target="_blank">Kali</a>
+											<a href="http://43.138.132.2/" ; target="_blank">Kali</a>
 										</h3>
 										<span class="aW aX a3p">
 											油香蜜
@@ -423,14 +429,15 @@
 						</div>
 						<!-- 首页 滑动标签 条目5-->
 						<div class="a4 ak md:a1T/2 xl:a1T/3 2xl:a1T/4">
-						 	<div class="gradient-bg a1Y a1V a2T[2px]">
+							<div class="gradient-bg a1Y a1V a2T[2px]">
 								<div class="a3 a5 a1V aM a3o">
 									<div class="a2c aF[70px] a4 aL[70px] a2p av">
 										<img src="static/picture/github.png" alt="artists" class="a30 a4 a31 a32">
 									</div>
 									<div class="a4">
 										<h3 class="a2E a1Q aX aZ">
-											<a href="https://github.com/1tel1/1tel1/blob/main/index.html"; target="_blank">1tel1</a>
+											<a href="https://github.com/1tel1/1tel1/blob/main/index.html" ;
+												target="_blank">1tel1</a>
 										</h3>
 										<span class="aW aX a3p">
 											github
@@ -444,12 +451,12 @@
 			</div>
 		</section>
 
-<!-- 首页 大图-->	
+		<!-- 首页 大图-->
 		<section class="a3q">
 			<div class="ae">
 				<div class="a2w a3l a1z a3m">
 					<div class="ah sm:a3">
-						<!-- 首页 大图 标题-->	
+						<!-- 首页 大图 标题-->
 						<h2 class="a1M a3n a1O a3r aZ">
 							云服务
 						</h2>
@@ -459,7 +466,7 @@
 						</a>
 					</div>
 				</div>
-				<!-- 首页 大图 条目-->	
+				<!-- 首页 大图 条目-->
 				<div class="a1R a3 a1S">
 					<!-- 首页 大图 条目1-->
 					<div class="a4 ak md:a1T/2 lg:a1T/3 2xl:a1T/4">
@@ -480,7 +487,8 @@
 							</div>
 							<div>
 								<h3>
-									<a href="https://cloud.tencent.com/" target="_blank" class="a2D a2a a1Q aX aZ hover:a1u">
+									<a href="https://cloud.tencent.com/" target="_blank"
+										class="a2D a2a a1Q aX aZ hover:a1u">
 										腾讯云服务
 									</a>
 								</h3>
@@ -488,14 +496,13 @@
 									<div class="a4">
 										<div class="a3 a5">
 											<div class="a2Z a2_ a4 aL[32px] a1f">
-												<img src="static/picture/tx1.png" alt="creator"
-													class="a30 a4 a31 a32">
+												<img src="static/picture/tx1.png" alt="creator" class="a30 a4 a31 a32">
 											</div>
 											<div class="a4">
 												<h4 class="a2Y aX aZ">
 													轻量服务器
 													<span class="al a2Y a1o a1t">
-													语音服务
+														语音服务
 													</span>
 												</h4>
 											</div>
@@ -505,7 +512,7 @@
 										<h5 class="a33 a2Y aX aZ">
 											备案域名
 											<span class="al a2Y a1o a1t">
-											存储桶
+												存储桶
 											</span>
 										</h5>
 									</div>
@@ -543,14 +550,13 @@
 									<div class="a4">
 										<div class="a3 a5">
 											<div class="a2Z a2_ a4 aL[32px] a1f">
-												<img src="static/picture/ali1.png" alt="creator"
-													class="a30 a4 a31 a32">
+												<img src="static/picture/ali1.png" alt="creator" class="a30 a4 a31 a32">
 											</div>
 											<div class="a4">
 												<h4 class="a2Y aX aZ">
 													云计算
 													<span class="al a2Y a1o a1t">
-													免费试用
+														免费试用
 													</span>
 												</h4>
 											</div>
@@ -560,7 +566,7 @@
 										<h5 class="a33 a2Y aX aZ">
 											企业邮箱
 											<span class="al a2Y a1o a1t">
-											国际云
+												国际云
 											</span>
 										</h5>
 									</div>
@@ -590,7 +596,8 @@
 							</div>
 							<div>
 								<h3>
-									<a href="https://www.huaweicloud.com/" target="_blank" class="a2D a2a a1Q aX aZ hover:a1u">
+									<a href="https://www.huaweicloud.com/" target="_blank"
+										class="a2D a2a a1Q aX aZ hover:a1u">
 										其他云服务
 									</a>
 								</h3>
@@ -598,8 +605,7 @@
 									<div class="a4">
 										<div class="a3 a5">
 											<div class="a2Z a2_ a4 aL[32px] a1f">
-												<img src="static/picture/hw1.png" alt="creator"
-													class="a30 a4 a31 a32">
+												<img src="static/picture/hw1.png" alt="creator" class="a30 a4 a31 a32">
 											</div>
 											<div class="a4">
 												<h4 class="a2Y aX aZ">
@@ -618,12 +624,12 @@
 									<div class="a4">
 										<h5 class="a33 a2Y aX aZ">
 											<a href="https://cloud.baidu.com/" target="_blank">
-											    百度智能云
+												百度智能云
 											</a>
 											<span class="al a2Y a1o a1t">
 												<a href="https://www.qiniu.com/" target="_blank">
-											    七牛云
-											</a>
+													七牛云
+												</a>
 											</span>
 										</h5>
 									</div>
@@ -661,18 +667,17 @@
 									<div class="a4">
 										<div class="a3 a5">
 											<div class="a2Z a2_ a4 aL[32px] a1f">
-												<img src="static/picture/aws.png" alt="creator"
-													class="a30 a4 a31 a32">
+												<img src="static/picture/aws.png" alt="creator" class="a30 a4 a31 a32">
 											</div>
 											<div class="a4">
 												<h4 class="a2Y aX aZ">aws
 													<a href="https://aws.amazon.com/" target="_blank">
-													    亚马逊
+														亚马逊
 													</a>
 													<span class="al a2Y a1o a1t">
 														<a href="https://azure.microsoft.com/" target="_blank">
-													    微软云计算
-													</a>
+															微软云计算
+														</a>
 													</span>
 												</h4>
 											</div>
@@ -681,12 +686,12 @@
 									<div class="a4">
 										<h5 class="a33 a2Y aX aZ">
 											<a href="https://cloud.google.com/" target="_blank">
-											谷歌云
+												谷歌云
 											</a>
 											<span class="al a2Y a1o a1t">
-											<a href="https://www.digitalocean.com/" target="_blank">
-											蓝色水滴
-											</a>
+												<a href="https://www.digitalocean.com/" target="_blank">
+													蓝色水滴
+												</a>
 											</span>
 										</h5>
 									</div>
@@ -701,7 +706,7 @@
 			</div>
 		</section>
 
-<!-- 首页 大图2-->	
+		<!-- 首页 大图2-->
 		<section class="a2L">
 			<div class="ae">
 				<div class="a2w a3l a1z a3m">
@@ -714,9 +719,9 @@
 						</a>
 					</div>
 				</div>
-				<!-- 首页 大图2 条目-->	
+				<!-- 首页 大图2 条目-->
 				<div class="a1R a3 a1S">
-					<!-- 首页 大图2 条目1-->	
+					<!-- 首页 大图2 条目1-->
 					<div class="a4 ak md:a1T/2 lg:a1T/3 2xl:a1T/4">
 						<div class="a1U a1V a1W a1G aM a2T[18px]">
 							<div class="af a1Y a2p av">
@@ -743,14 +748,18 @@
 									<div class="a4">
 										<div class="a3 a5">
 											<div class="a2Z a2_ a4 aL[32px] a1f">
-												<img src="static/picture/creator-011.png" alt="creator"
+												<img src="static/picture/freepbx2.png" alt="creator"
 													class="a30 a4 a31 a32">
 											</div>
 											<div class="a4">
 												<h4 class="a2Y aX aZ">
-													@Devid_Mill...
+													FreePBX
 													<span class="al a2Y a1o a1t">
-														creator
+														<a href="javascript:;">
+															<input style="width: 0.1rem; height: 0.1rem; color: #fff;"
+																type="text" id="copy5" value="yiyanyun21">
+															<button data-copytarget="#copy5">IP️</button>
+														</a>
 													</span>
 												</h4>
 											</div>
@@ -758,9 +767,17 @@
 									</div>
 									<div class="a4">
 										<h5 class="a33 a2Y aX aZ">
-											5.49 ETH
+											<a href="javascript:;">
+												<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text"
+													id="copy5" value="yiyanyun21">
+												<button data-copytarget="#copy5">用户名️</button>
+											</a>
 											<span class="al a2Y a1o a1t">
-												Current Bit
+												<a href="javascript:;">
+													<input style="width: 0.1rem; height: 0.1rem; color: #fff;"
+														type="text" id="copy5" value="yiyanyun21">
+													<button data-copytarget="#copy5">密码</button>
+												</a>
 											</span>
 										</h5>
 									</div>
@@ -768,7 +785,7 @@
 								<div class="a3 a5 ah a34 a1G a35">
 									<a href="javascript:void(0)"
 										class="a3 a5 a1Z a1f a1C aP ak a1n aX aZ a1w hover:a36 sm:a2u">
-										Place Bid
+										IP 进入
 									</a>
 									<a href="javascript:void(0)" class="a3 a5 a1Z a1f aP ak a1n aX aZ hover:a1u sm:a2u">
 										<span class="a37">
@@ -779,7 +796,7 @@
 													fill="currentColor"></path>
 											</svg>
 										</span>
-										View History
+										更多
 									</a>
 								</div>
 							</div>
@@ -805,21 +822,25 @@
 							<div>
 								<h3>
 									<a href="javascript:void(0)" class="a2D a2a a1Q aX aZ hover:a1u">
-										3d abstract illustration
+										XSWitch-FreeSWITCH 中文WEB
 									</a>
 								</h3>
 								<div class="a2b a3 a5 ah">
 									<div class="a4">
 										<div class="a3 a5">
 											<div class="a2Z a2_ a4 aL[32px] a1f">
-												<img src="static/picture/creator-021.png" alt="creator"
+												<img src="static/picture/xswitch2.png" alt="creator"
 													class="a30 a4 a31 a32">
 											</div>
 											<div class="a4">
 												<h4 class="a2Y aX aZ">
-													@Wilium_de...
+													FreeSWITCH
 													<span class="al a2Y a1o a1t">
-														creator
+														<a href="javascript:;">
+															<input style="width: 0.1rem; height: 0.1rem; color: #fff;"
+																type="text" id="copy5" value="yiyanyun21">
+															<button data-copytarget="#copy5">IP️</button>
+														</a>
 													</span>
 												</h4>
 											</div>
@@ -827,9 +848,17 @@
 									</div>
 									<div class="a4">
 										<h5 class="a33 a2Y aX aZ">
-											2.85 ETH
+											<a href="javascript:;">
+												<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text"
+													id="copy5" value="yiyanyun21">
+												<button data-copytarget="#copy5">用户名️</button>
+											</a>
 											<span class="al a2Y a1o a1t">
-												Current Bit
+												<a href="javascript:;">
+													<input style="width: 0.1rem; height: 0.1rem; color: #fff;"
+														type="text" id="copy5" value="yiyanyun21">
+													<button data-copytarget="#copy5">密码</button>
+												</a>
 											</span>
 										</h5>
 									</div>
@@ -837,7 +866,7 @@
 								<div class="a3 a5 ah a34 a1G a35">
 									<a href="javascript:void(0)"
 										class="a3 a5 a1Z a1f a1C aP ak a1n aX aZ a1w hover:a36 sm:a2u">
-										Place Bid
+										IP 进入
 									</a>
 									<a href="javascript:void(0)" class="a3 a5 a1Z a1f aP ak a1n aX aZ hover:a1u sm:a2u">
 										<span class="a37">
@@ -848,7 +877,7 @@
 													fill="currentColor"></path>
 											</svg>
 										</span>
-										View History
+										更多
 									</a>
 								</div>
 							</div>
@@ -874,21 +903,25 @@
 							<div>
 								<h3>
 									<a href="javascript:void(0)" class="a2D a2a a1Q aX aZ hover:a1u">
-										3d abstract illustration
+										FusionPBX-FreeSWITCH 传统WEB
 									</a>
 								</h3>
 								<div class="a2b a3 a5 ah">
 									<div class="a4">
 										<div class="a3 a5">
 											<div class="a2Z a2_ a4 aL[32px] a1f">
-												<img src="static/picture/creator-031.png" alt="creator"
+												<img src="static/picture/fusionpbx2.png" alt="creator"
 													class="a30 a4 a31 a32">
 											</div>
 											<div class="a4">
 												<h4 class="a2Y aX aZ">
-													@Nicolo_Tes...
+													FusionPBX
 													<span class="al a2Y a1o a1t">
-														creator
+														<a href="javascript:;">
+															<input style="width: 0.1rem; height: 0.1rem; color: #fff;"
+																type="text" id="copy5" value="yiyanyun21">
+															<button data-copytarget="#copy5">IP️</button>
+														</a>
 													</span>
 												</h4>
 											</div>
@@ -896,9 +929,17 @@
 									</div>
 									<div class="a4">
 										<h5 class="a33 a2Y aX aZ">
-											7.82 ETH
+											<a href="javascript:;">
+												<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text"
+													id="copy5" value="yiyanyun21">
+												<button data-copytarget="#copy5">用户名️</button>
+											</a>
 											<span class="al a2Y a1o a1t">
-												Current Bit
+												<a href="javascript:;">
+													<input style="width: 0.1rem; height: 0.1rem; color: #fff;"
+														type="text" id="copy5" value="yiyanyun21">
+													<button data-copytarget="#copy5">密码</button>
+												</a>
 											</span>
 										</h5>
 									</div>
@@ -906,7 +947,7 @@
 								<div class="a3 a5 ah a34 a1G a35">
 									<a href="javascript:void(0)"
 										class="a3 a5 a1Z a1f a1C aP ak a1n aX aZ a1w hover:a36 sm:a2u">
-										Place Bid
+										IP 进入
 									</a>
 									<a href="javascript:void(0)" class="a3 a5 a1Z a1f aP ak a1n aX aZ hover:a1u sm:a2u">
 										<span class="a37">
@@ -917,7 +958,7 @@
 													fill="currentColor"></path>
 											</svg>
 										</span>
-										View History
+										更多
 									</a>
 								</div>
 							</div>
@@ -943,21 +984,25 @@
 							<div>
 								<h3>
 									<a href="javascript:void(0)" class="a2D a2a a1Q aX aZ hover:a1u">
-										3d abstract illustration
+										PSCC-FreeSWITCH 群呼系统
 									</a>
 								</h3>
 								<div class="a2b a3 a5 ah">
 									<div class="a4">
 										<div class="a3 a5">
 											<div class="a2Z a2_ a4 aL[32px] a1f">
-												<img src="static/picture/creator-041.png" alt="creator"
+												<img src="static/picture/pscc2.png" alt="creator"
 													class="a30 a4 a31 a32">
 											</div>
 											<div class="a4">
 												<h4 class="a2Y aX aZ">
-													@Liza_Auro...
+													PSCC
 													<span class="al a2Y a1o a1t">
-														creator
+														<a href="javascript:;">
+															<input style="width: 0.1rem; height: 0.1rem; color: #fff;"
+																type="text" id="copy5" value="yiyanyun21">
+															<button data-copytarget="#copy5">IP️</button>
+														</a>
 													</span>
 												</h4>
 											</div>
@@ -965,9 +1010,17 @@
 									</div>
 									<div class="a4">
 										<h5 class="a33 a2Y aX aZ">
-											0.25 ETH
+											<a href="javascript:;">
+												<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text"
+													id="copy5" value="yiyanyun21">
+												<button data-copytarget="#copy5">用户名️</button>
+											</a>
 											<span class="al a2Y a1o a1t">
-												Current Bit
+												<a href="javascript:;">
+													<input style="width: 0.1rem; height: 0.1rem; color: #fff;"
+														type="text" id="copy5" value="yiyanyun21">
+													<button data-copytarget="#copy5">密码</button>
+												</a>
 											</span>
 										</h5>
 									</div>
@@ -975,7 +1028,7 @@
 								<div class="a3 a5 ah a34 a1G a35">
 									<a href="javascript:void(0)"
 										class="a3 a5 a1Z a1f a1C aP ak a1n aX aZ a1w hover:a36 sm:a2u">
-										Place Bid
+										IP 进入
 									</a>
 									<a href="javascript:void(0)" class="a3 a5 a1Z a1f aP ak a1n aX aZ hover:a1u sm:a2u">
 										<span class="a37">
@@ -986,7 +1039,7 @@
 													fill="currentColor"></path>
 											</svg>
 										</span>
-										View History
+										更多
 									</a>
 								</div>
 							</div>
@@ -1012,21 +1065,24 @@
 							<div>
 								<h3>
 									<a href="javascript:void(0)" class="a2D a2a a1Q aX aZ hover:a1u">
-										3d abstract illustration
+										VOS3000
 									</a>
 								</h3>
 								<div class="a2b a3 a5 ah">
 									<div class="a4">
 										<div class="a3 a5">
 											<div class="a2Z a2_ a4 aL[32px] a1f">
-												<img src="static/picture/creator-05.png" alt="creator"
-													class="a30 a4 a31 a32">
+												<img src="static/picture/vos2.png" alt="creator" class="a30 a4 a31 a32">
 											</div>
 											<div class="a4">
 												<h4 class="a2Y aX aZ">
-													@Lathium_Lui...
+													VOS3000
 													<span class="al a2Y a1o a1t">
-														creator
+														<a href="javascript:;">
+															<input style="width: 0.1rem; height: 0.1rem; color: #fff;"
+																type="text" id="copy5" value="yiyanyun21">
+															<button data-copytarget="#copy5">IP️</button>
+														</a>
 													</span>
 												</h4>
 											</div>
@@ -1034,9 +1090,17 @@
 									</div>
 									<div class="a4">
 										<h5 class="a33 a2Y aX aZ">
-											3.24 ETH
+											<a href="javascript:;">
+												<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text"
+													id="copy5" value="yiyanyun21">
+												<button data-copytarget="#copy5">用户名️</button>
+											</a>
 											<span class="al a2Y a1o a1t">
-												Current Bit
+												<a href="javascript:;">
+													<input style="width: 0.1rem; height: 0.1rem; color: #fff;"
+														type="text" id="copy5" value="yiyanyun21">
+													<button data-copytarget="#copy5">密码</button>
+												</a>
 											</span>
 										</h5>
 									</div>
@@ -1044,7 +1108,7 @@
 								<div class="a3 a5 ah a34 a1G a35">
 									<a href="javascript:void(0)"
 										class="a3 a5 a1Z a1f a1C aP ak a1n aX aZ a1w hover:a36 sm:a2u">
-										Place Bid
+										IP 进入
 									</a>
 									<a href="javascript:void(0)" class="a3 a5 a1Z a1f aP ak a1n aX aZ hover:a1u sm:a2u">
 										<span class="a37">
@@ -1055,7 +1119,7 @@
 													fill="currentColor"></path>
 											</svg>
 										</span>
-										View History
+										更多
 									</a>
 								</div>
 							</div>
@@ -1065,7 +1129,7 @@
 					<div class="a4 ak md:a1T/2 lg:a1T/3 2xl:a1T/4">
 						<div class="a1U a1V a1W a1G aM a2T[18px]">
 							<div class="af a1Y a2p av">
-								<img src="static/picture/image-06.svg" alt="auctions" class="a4">
+								<img src="static/picture/image-05.svg" alt="auctions" class="a4">
 								<button class="ar as a2U a10 a5 a1f aH a2V a2W">
 									<svg width="14" height="14" viewbox="0 0 14 14" fill="none"
 										xmlns="http://www.w3.org/2000/svg">
@@ -1081,21 +1145,24 @@
 							<div>
 								<h3>
 									<a href="javascript:void(0)" class="a2D a2a a1Q aX aZ hover:a1u">
-										3d abstract illustration
+										VOS3000
 									</a>
 								</h3>
 								<div class="a2b a3 a5 ah">
 									<div class="a4">
 										<div class="a3 a5">
 											<div class="a2Z a2_ a4 aL[32px] a1f">
-												<img src="static/picture/creator-011.png" alt="creator"
-													class="a30 a4 a31 a32">
+												<img src="static/picture/vos2.png" alt="creator" class="a30 a4 a31 a32">
 											</div>
 											<div class="a4">
 												<h4 class="a2Y aX aZ">
-													@Marko...
+													VOS3000
 													<span class="al a2Y a1o a1t">
-														creator
+														<a href="javascript:;">
+															<input style="width: 0.1rem; height: 0.1rem; color: #fff;"
+																type="text" id="copy5" value="yiyanyun21">
+															<button data-copytarget="#copy5">IP️</button>
+														</a>
 													</span>
 												</h4>
 											</div>
@@ -1103,9 +1170,17 @@
 									</div>
 									<div class="a4">
 										<h5 class="a33 a2Y aX aZ">
-											4.55 ETH
+											<a href="javascript:;">
+												<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text"
+													id="copy5" value="yiyanyun21">
+												<button data-copytarget="#copy5">用户名️</button>
+											</a>
 											<span class="al a2Y a1o a1t">
-												Current Bit
+												<a href="javascript:;">
+													<input style="width: 0.1rem; height: 0.1rem; color: #fff;"
+														type="text" id="copy5" value="yiyanyun21">
+													<button data-copytarget="#copy5">密码</button>
+												</a>
 											</span>
 										</h5>
 									</div>
@@ -1113,7 +1188,7 @@
 								<div class="a3 a5 ah a34 a1G a35">
 									<a href="javascript:void(0)"
 										class="a3 a5 a1Z a1f a1C aP ak a1n aX aZ a1w hover:a36 sm:a2u">
-										Place Bid
+										IP 进入
 									</a>
 									<a href="javascript:void(0)" class="a3 a5 a1Z a1f aP ak a1n aX aZ hover:a1u sm:a2u">
 										<span class="a37">
@@ -1124,7 +1199,7 @@
 													fill="currentColor"></path>
 											</svg>
 										</span>
-										View History
+										更多
 									</a>
 								</div>
 							</div>
@@ -1134,7 +1209,7 @@
 					<div class="a4 ak md:a1T/2 lg:a1T/3 2xl:a1T/4">
 						<div class="a1U a1V a1W a1G aM a2T[18px]">
 							<div class="af a1Y a2p av">
-								<img src="static/picture/image-07.svg" alt="auctions" class="a4">
+								<img src="static/picture/image-05.svg" alt="auctions" class="a4">
 								<button class="ar as a2U a10 a5 a1f aH a2V a2W">
 									<svg width="14" height="14" viewbox="0 0 14 14" fill="none"
 										xmlns="http://www.w3.org/2000/svg">
@@ -1150,21 +1225,24 @@
 							<div>
 								<h3>
 									<a href="javascript:void(0)" class="a2D a2a a1Q aX aZ hover:a1u">
-										3d abstract illustration
+										VOS3000
 									</a>
 								</h3>
 								<div class="a2b a3 a5 ah">
 									<div class="a4">
 										<div class="a3 a5">
 											<div class="a2Z a2_ a4 aL[32px] a1f">
-												<img src="static/picture/creator-07.png" alt="creator"
-													class="a30 a4 a31 a32">
+												<img src="static/picture/vos2.png" alt="creator" class="a30 a4 a31 a32">
 											</div>
 											<div class="a4">
 												<h4 class="a2Y aX aZ">
-													@Andrio_Hev...
+													VOS3000
 													<span class="al a2Y a1o a1t">
-														creator
+														<a href="javascript:;">
+															<input style="width: 0.1rem; height: 0.1rem; color: #fff;"
+																type="text" id="copy5" value="yiyanyun21">
+															<button data-copytarget="#copy5">IP️</button>
+														</a>
 													</span>
 												</h4>
 											</div>
@@ -1172,9 +1250,17 @@
 									</div>
 									<div class="a4">
 										<h5 class="a33 a2Y aX aZ">
-											0.89 ETH
+											<a href="javascript:;">
+												<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text"
+													id="copy5" value="yiyanyun21">
+												<button data-copytarget="#copy5">用户名️</button>
+											</a>
 											<span class="al a2Y a1o a1t">
-												Current Bit
+												<a href="javascript:;">
+													<input style="width: 0.1rem; height: 0.1rem; color: #fff;"
+														type="text" id="copy5" value="yiyanyun21">
+													<button data-copytarget="#copy5">密码</button>
+												</a>
 											</span>
 										</h5>
 									</div>
@@ -1182,7 +1268,7 @@
 								<div class="a3 a5 ah a34 a1G a35">
 									<a href="javascript:void(0)"
 										class="a3 a5 a1Z a1f a1C aP ak a1n aX aZ a1w hover:a36 sm:a2u">
-										Place Bid
+										IP 进入
 									</a>
 									<a href="javascript:void(0)" class="a3 a5 a1Z a1f aP ak a1n aX aZ hover:a1u sm:a2u">
 										<span class="a37">
@@ -1193,7 +1279,7 @@
 													fill="currentColor"></path>
 											</svg>
 										</span>
-										View History
+										更多
 									</a>
 								</div>
 							</div>
@@ -1203,7 +1289,7 @@
 					<div class="a4 ak md:a1T/2 lg:a1T/3 2xl:a1T/4">
 						<div class="a1U a1V a1W a1G aM a2T[18px]">
 							<div class="af a1Y a2p av">
-								<img src="static/picture/image-08.svg" alt="auctions" class="a4">
+								<img src="static/picture/image-05.svg" alt="auctions" class="a4">
 								<button class="ar as a2U a10 a5 a1f aH a2V a2W">
 									<svg width="14" height="14" viewbox="0 0 14 14" fill="none"
 										xmlns="http://www.w3.org/2000/svg">
@@ -1219,21 +1305,24 @@
 							<div>
 								<h3>
 									<a href="javascript:void(0)" class="a2D a2a a1Q aX aZ hover:a1u">
-										3d abstract illustration
+										VOS3000
 									</a>
 								</h3>
 								<div class="a2b a3 a5 ah">
 									<div class="a4">
 										<div class="a3 a5">
 											<div class="a2Z a2_ a4 aL[32px] a1f">
-												<img src="static/picture/creator-08.png" alt="creator"
-													class="a30 a4 a31 a32">
+												<img src="static/picture/vos2.png" alt="creator" class="a30 a4 a31 a32">
 											</div>
 											<div class="a4">
 												<h4 class="a2Y aX aZ">
-													@Mariya_Hie...
+													VOS3000
 													<span class="al a2Y a1o a1t">
-														creator
+														<a href="javascript:;">
+															<input style="width: 0.1rem; height: 0.1rem; color: #fff;"
+																type="text" id="copy5" value="yiyanyun21">
+															<button data-copytarget="#copy5">IP️</button>
+														</a>
 													</span>
 												</h4>
 											</div>
@@ -1241,9 +1330,17 @@
 									</div>
 									<div class="a4">
 										<h5 class="a33 a2Y aX aZ">
-											1.75 ETH
+											<a href="javascript:;">
+												<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text"
+													id="copy5" value="yiyanyun21">
+												<button data-copytarget="#copy5">用户名️</button>
+											</a>
 											<span class="al a2Y a1o a1t">
-												Current Bit
+												<a href="javascript:;">
+													<input style="width: 0.1rem; height: 0.1rem; color: #fff;"
+														type="text" id="copy5" value="yiyanyun21">
+													<button data-copytarget="#copy5">密码</button>
+												</a>
 											</span>
 										</h5>
 									</div>
@@ -1251,7 +1348,7 @@
 								<div class="a3 a5 ah a34 a1G a35">
 									<a href="javascript:void(0)"
 										class="a3 a5 a1Z a1f a1C aP ak a1n aX aZ a1w hover:a36 sm:a2u">
-										Place Bid
+										IP 进入
 									</a>
 									<a href="javascript:void(0)" class="a3 a5 a1Z a1f aP ak a1n aX aZ hover:a1u sm:a2u">
 										<span class="a37">
@@ -1262,7 +1359,7 @@
 													fill="currentColor"></path>
 											</svg>
 										</span>
-										View History
+										更多
 									</a>
 								</div>
 							</div>
@@ -1281,22 +1378,22 @@
 			</div>
 		</section>
 
-<!-- 首页 条框-->	
+		<!-- 首页 条框-->
 		<section id="features" class="a1E[90px]">
 			<div class="ae">
 				<div class="a1J a1K aL[650px] a1L">
-					<!-- 首页 条框 标题-->	
+					<!-- 首页 条框 标题-->
 					<h2 class="a1M a1N a1O a1P aZ sm:aY[42px]">
 						GoodWay
 					</h2>
-					<!-- 首页 条框 说明-->	
+					<!-- 首页 条框 说明-->
 					<p class="a1Q a1o a1t">
 						goodway
 					</p>
 				</div>
-				<!-- 首页 条框 条目-->	
+				<!-- 首页 条框 条目-->
 				<div class="a1R a3 a1S">
-					<!-- 首页 条框 条目1-->	
+					<!-- 首页 条框 条目1-->
 					<div class="a4 ak md:a1T/2 lg:a1T/3 2xl:a1T/4">
 						<div class="aU a1U a1V a1W a1G aM a1X a1w hover:a1z hover:aH">
 							<div class="a1Y a3 aF[72px] aG[72px] a5 a1Z a1_ a20[#FFF0E9]">
@@ -1308,14 +1405,26 @@
 								</svg>
 							</div>
 							<h3 class="a21 a22 a1O aZ a7 group-hover:a23">
-								Set Up Your Wallet
+								<a href="https://www.unitedworldtelecom.com/" class="a2D a2a a1Q aX aZ hover:a1u">
+									DID unitedworldtelecom
+								</a>
 							</h3>
 							<p class="aW a1o a1t">
-								Lorem ipsum dolor sit amet consectetur smit.
+								4001200367
+								<a href="javascript:;">
+									<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text" id="copyu1"
+										value="1@1tel.cn">
+									<button data-copytarget="#copyu1">✡️ 用户名 ✡️</button>
+								</a>
+								<a href="javascript:;">
+									<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text" id="copyu2"
+										value="YiYanYun1.">
+									<button data-copytarget="#copyu2">✡️ 密码 ✡️</button>
+								</a>
 							</p>
 						</div>
 					</div>
-					<!-- 首页 条框 条目2-->	
+					<!-- 首页 条框 条目2-->
 					<div class="a4 ak md:a1T/2 lg:a1T/3 2xl:a1T/4">
 						<div class="aU a1U a1V a1W a1G aM a1X a1w hover:a1z hover:aH">
 							<div class="a1Y a3 aF[72px] aG[72px] a5 a1Z a1_ a20[#FFF6DD]">
@@ -1327,14 +1436,27 @@
 								</svg>
 							</div>
 							<h3 class="a21 a22 a1O aZ a7 group-hover:a23">
-								Make Your Collection
+								<a href="https://clickncallnow.com/" class="a2D a2a a1Q aX aZ hover:a1u">
+									SIP clickncallnow
+								</a>
 							</h3>
 							<p class="aW a1o a1t">
-								Lorem ipsum dolor sit amet consectetur smit.
+								SIP
+								<a href="javascript:;">
+									<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text" id="copyc1"
+										value="1248329365">
+									<button data-copytarget="#copyc1">✡️ 用户名 ✡️</button>
+								</a>
+								<a href="javascript:;">
+									<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text" id="copyc2"
+										value="Guwei888">
+									<button data-copytarget="#copyc2">✡️ 密码 ✡️</button>
+								</a>
+
 							</p>
 						</div>
 					</div>
-					<!-- 首页 条框 条目3-->	
+					<!-- 首页 条框 条目3-->
 					<div class="a4 ak md:a1T/2 lg:a1T/3 2xl:a1T/4">
 						<div class="aU a1U a1V a1W a1G aM a1X a1w hover:a1z hover:aH">
 							<div class="a1Y a3 aF[72px] aG[72px] a5 a1Z a1_ a20[#EDF8F4]">
@@ -1346,14 +1468,27 @@
 								</svg>
 							</div>
 							<h3 class="a21 a22 a1O aZ a7 group-hover:a23">
-								Add Your NFTs
+								<a href="https://clickncallnow.com/" class="a2D a2a a1Q aX aZ hover:a1u">
+									SIP clickncallnow
+								</a>
 							</h3>
 							<p class="aW a1o a1t">
-								Lorem ipsum dolor sit amet consectetur smit.
+								SIP
+								<a href="javascript:;">
+									<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text" id="copyc1"
+										value="1248329365">
+									<button data-copytarget="#copyc1">✡️ 用户名 ✡️</button>
+								</a>
+								<a href="javascript:;">
+									<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text" id="copyc2"
+										value="Guwei888">
+									<button data-copytarget="#copyc2">✡️ 密码 ✡️</button>
+								</a>
+
 							</p>
 						</div>
 					</div>
-					<!-- 首页 条框 条目4-->	
+					<!-- 首页 条框 条目4-->
 					<div class="a4 ak md:a1T/2 lg:a1T/3 2xl:a1T/4">
 						<div class="aU a1U a1V a1W a1G aM a1X a1w hover:a1z hover:aH">
 							<div class="a1Y a3 aF[72px] aG[72px] a5 a1Z a1_ a20[#E1DDFF]">
@@ -1365,35 +1500,47 @@
 								</svg>
 							</div>
 							<h3 class="a21 a22 a1O aZ a7 group-hover:a23">
-								List Them For Sale
+								<a href="https://clickncallnow.com/" class="a2D a2a a1Q aX aZ hover:a1u">
+									SIP clickncallnow
+								</a>
 							</h3>
 							<p class="aW a1o a1t">
-								Lorem ipsum dolor sit amet consectetur smit.
+								SIP
+								<a href="javascript:;">
+									<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text" id="copyc1"
+										value="1248329365">
+									<button data-copytarget="#copyc1">✡️ 用户名 ✡️</button>
+								</a>
+								<a href="javascript:;">
+									<input style="width: 0.1rem; height: 0.1rem; color: #fff;" type="text" id="copyc2"
+										value="Guwei888">
+									<button data-copytarget="#copyc2">✡️ 密码 ✡️</button>
+								</a>
+
 							</p>
 						</div>
 					</div>
 				</div>
-			</div>
 		</section>
 
-<!-- 首页 大套小-->	
+		<!-- 首页 大套小-->
 		<section class="a2L a1I[60px]">
 			<div class="ae">
 				<div class="a2w a3l a1z a3m">
 					<div class="ah sm:a3">
-						<!-- 首页 大套小 标题-->	
+						<!-- 首页 大套小 标题-->
 						<h2 class="a1M a3n a1O a3r aZ">
 							Popular Collection
 						</h2>
-						<!-- 首页 大套小 说明-->	
+						<!-- 首页 大套小 说明-->
 						<a href="javascript:void(0)" class="a1Y a10 a5 a1Z a1f a1C ax[10px] aS aW aX aZ a1w hover:a36">
 							Explore More
 						</a>
 					</div>
 				</div>
-				<!-- 首页 大套小 条目-->	
+				<!-- 首页 大套小 条目-->
 				<div class="a1R a3 a1S">
-					<!-- 首页 大套小 条目1-->	
+					<!-- 首页 大套小 条目1-->
 					<div class="a4 ak lg:a1T/2">
 						<div class="a1U a1V a1W a1G aM a3t md:a1X lg:a3t xl:a1X">
 							<div class="a2I a3 a1S">
@@ -1444,7 +1591,7 @@
 							</div>
 						</div>
 					</div>
-					<!-- 首页 大套小 条目2-->	
+					<!-- 首页 大套小 条目2-->
 					<div class="a4 ak lg:a1T/2">
 						<div class="a1U a1V a1W a1G aM a3t md:a1X lg:a3t xl:a1X">
 							<div class="a2I a3 a1S">
@@ -1510,7 +1657,7 @@
 			</div>
 		</section>
 
-<!-- 首页 底部-->	
+		<!-- 首页 底部-->
 		<footer class="aM a24">
 			<div class="ae">
 				<div class="a1R a3 a1S">
@@ -1518,7 +1665,7 @@
 						<div class="a28">
 							<div class="aL[300px]">
 								<a href="javascript:;" class="a29 a2a">
-									<img src="static/picture/logo.svg" alt="logo" class="aq">
+									<img src="static/picture/logo.gif" alt="logo" class="aq">
 								</a>
 								<p class="a2b aW a1o a1t">
 									Lorem ipsum dolor amet consectetur adipiscing elit do eiusmod
@@ -1652,35 +1799,35 @@
 				</div>
 			</div>
 		</footer>
-											<script>
-											    (function name(params) {
-											        'use strict';
-											
-											        //添加点击事件
-											        document.body.addEventListener('click', copy, true);
-											
-											        //copy事件
-											        function copy(e) {
-											            //找到要复制的区域
-											            var
-											                t = e.target,
-											                c = t.dataset.copytarget,
-											                inp = (c ? document.querySelector(c) : null);
-											            //要复制的区域是否可以选中
-											            if (inp && inp.select) {
-											                //选中
-											                inp.select();
-											
-											                try {
-											                    //执行复制
-											                    document.execCommand('copy');
-											                } catch (error) {
-											                    alert('请使用Ctrl+c进行复制');
-											                }
-											            }
-											        }
-											    })();
-											</script>
+		<script>
+			(function name(params) {
+				'use strict';
+
+				//添加点击事件
+				document.body.addEventListener('click', copy, true);
+
+				//copy事件
+				function copy(e) {
+					//找到要复制的区域
+					var
+						t = e.target,
+						c = t.dataset.copytarget,
+						inp = (c ? document.querySelector(c) : null);
+					//要复制的区域是否可以选中
+					if (inp && inp.select) {
+						//选中
+						inp.select();
+
+						try {
+							//执行复制
+							document.execCommand('copy');
+						} catch (error) {
+							alert('请使用Ctrl+c进行复制');
+						}
+					}
+				}
+			})();
+		</script>
 		<script src="static/js/tiny-slider.js"></script>
 		<script>
 			//======== tiny slider for clients
